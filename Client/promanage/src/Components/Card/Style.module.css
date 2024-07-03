@@ -1,0 +1,187 @@
+.card{
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-radius: .9375rem;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,-10.9);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.cardTop{
+    /* display: flex;
+    gap: 5px; */
+    
+    width: 100%;
+}
+.cardTopLabels {
+    display: flex;
+    gap: 10px;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.card_top svg{
+    opacity: 0;
+    transition: 200ms;
+}
+.card:hover .card_top svg{
+    opacity: 1;
+}
+.cardTitle {
+  font-weight: 500;
+  padding-top: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  line-height: 33px;
+  /* size: 22px; */
+  font-size: 22px;
+  font-family: poppins;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+  .cardTitle:hover {
+    /* Tooltip styles */
+    position: relative;
+  }
+  
+  .cardTitle:hover::before {
+    /* Tooltip content */
+    content: attr(title);
+    position: absolute;
+   
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 999;
+    /* Adjust positioning of tooltip */
+    top: -30px;
+    left: 0;
+  }
+  .cardBody {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .checklist {
+    font-weight: 500;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 16.97px;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+  .chexktext{
+
+  }
+  .checkarrow{
+    
+  }
+  .checklistItems {
+    margin-top: 5px;
+  }
+  .checklistItem {
+    border: 1px solid #E2E2E2;
+    display: flex;
+    flex-flow: row;
+    width: auto;
+    border-radius: 10px;
+    justify-content: start;
+    padding: 5px;
+    margin-top: 10px;
+  }
+  .cardFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cardFooterLabels {
+    display: flex;
+    gap: 10px;
+    width: 75px;
+    font-size: 10px;
+  }
+  
+  .cardFooterButtons {
+    display: flex;
+    gap: 10px;
+  }
+ 
+.dropdownMenu {
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    align-items: flex-start;
+    width: 22%;
+    float: inline-end;
+    border-color: antiquewhite;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  .dropdownMenu button{
+    border: none;
+    background: white;
+    cursor: pointer;
+
+  }
+  .redCircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .blueCircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: blue;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .greenCircle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green;
+    display: inline-block;
+    margin-right: 5px;
+  }  
+  .priorityCircle {
+    display: flex;
+    align-items: center;
+  }
+  .moreHorizontalIcon {
+    margin-left: auto; /* Push the More Horizontal icon to the right */
+  }
+  .pri{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 500;
+    font-family: poppins;
+  }
+  .buttonGroup{
+    width: 85px;
+    height: 30px;
+    background-color: #EEECEC;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    cursor: pointer;
+
+  }
+  .checkarrow{
+    background-color: #EEECEC;
+  }
